@@ -11,5 +11,11 @@ elif sys.argv[1] == "-l":
 
 elif sys.argv[1] == "-a":
     fr = open("tasks.txt", "a")
-    fr.write(str(sys.argv[2]) + " ∞ " + "\n")
+    fr.writelines("\n" + str(sys.argv[2]))
     fr.close()
+
+class Text:
+
+    def __init__(self):
+        fr = open("tasks.txt", "r")
+        text = fr.readlines()
