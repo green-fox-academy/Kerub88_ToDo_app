@@ -19,3 +19,5 @@ class Text:
     def __init__(self):
         fr = open("tasks.txt", "r")
         text = fr.readlines()
+        for element in text:
+            if element[0] ==
